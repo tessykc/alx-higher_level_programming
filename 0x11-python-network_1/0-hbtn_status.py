@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+#/usr/bin/python3
 """
-fetches https://intranet.hbtn.io/status
+fetches https://alx-intranet.hbtn.io/status
 """
 if __name__ == "__main__":
     import urllib.request as request
