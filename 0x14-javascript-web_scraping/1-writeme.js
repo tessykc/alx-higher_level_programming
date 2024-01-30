@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const fs = require('fs');
 
 // Check if both file path and string to write are provided as command line arguments
