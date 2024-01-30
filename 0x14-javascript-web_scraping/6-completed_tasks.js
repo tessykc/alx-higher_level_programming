@@ -30,7 +30,7 @@ request.get(apiUrl, (error, response, body) => {
 
       // Print users with completed tasks
       completedTasksByUser.forEach((completedTasks, userId) => {
-        console.log(`User ID ${userId}: ${completedTasks} completed task(s)`);
+        console.log(`${userId}: ${completedTasks}` );
       });
     } catch (parseError) {
       console.error(`Error parsing JSON response: ${parseError.message}`);

@@ -32,7 +32,7 @@ request.get(apiUrl, (error, response, body) => {
           } else {
             try {
               const characterData = JSON.parse(characterBody);
-              console.log(`${index + 1}. ${characterData.name}`);
+              console.log(`${index + 1 }. ${characterData.name}`);
             } catch (parseError) {
               console.error(`Error parsing character data: ${parseError.message}`);
             }
