@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const fs = require('fs');
 
 // Check if the file path is provided as a command line argument
