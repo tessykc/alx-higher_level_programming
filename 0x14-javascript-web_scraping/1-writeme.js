@@ -5,8 +5,8 @@ const writeData = process.argv[3];
 
 // Write the content to the file in utf-8
 fs.writeFile(filePath, writeData, 'utf-8', (err) => {
-  if (error) {
+  if (err) {
     // Print the error if an error occurred during writing
-    console.log(error);
+    console.log(err);
   }
 })
