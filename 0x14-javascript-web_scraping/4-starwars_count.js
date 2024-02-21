@@ -10,7 +10,8 @@ request(url, (error, response, body) => {
     return new Promise((resolve, reject) => {
       request(charUrl, (error, response, body) => {
         if (error) { reject(error); return; }
-        resolve(JSON.parse(body));
+        const characterData = JSON.parse(body);
+        resolve(characterData);
       });
     });
   };
