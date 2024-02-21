@@ -5,5 +5,5 @@ const url = process.argv[2];
 const fileStream = fs.createWriteStream(process.argv[3]);
 
 request
-.get(url)
-.pipe(fileStream);
+  .get(url);
+  .pipe(fileStream);

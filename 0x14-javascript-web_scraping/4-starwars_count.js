@@ -2,15 +2,14 @@
 const request = require('request');
 const url = process.argv[2];
 
-
 request(url, (error, response, body) => {
-  if (error) { console.log(error); return;}
+  if (error) { console.log(error); return; }
   const jsonBody = JSON.parse(body);
   let wedgeCount = 0;
   const fetchCharacterData = (charUrl) => {
     return new Promise((resolve, reject) => {
       request(charUrl, (error, response, body) => {
-        if (error) { reject(error); return;}
+        if (error) { reject(error); return; }
         resolve(JSON.parse(body));
       });
     });
